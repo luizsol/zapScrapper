@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+  ihub-db:
+    image: mongo:3.2.20-jessie
+    restart: always
+    volumes:
+      - ./data:/data/db
+    ports:
+      - 27017:27017
